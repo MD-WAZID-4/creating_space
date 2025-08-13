@@ -87,3 +87,70 @@ else{
 
 
 
+
+
+
+
+
+
+// most frequent even element
+
+
+int n=nums.size();
+vector<int>v;
+
+for(int i=0;i<n;i++){
+    if(nums[i]%2==0){
+        v.push_back(nums[i]);
+    }
+}
+
+if(v.size()==0){
+    return -1;
+}
+
+sort(v.begin(),v.end());
+
+
+int ans=0;
+int c=1;
+for(int i=0;i<v.size-1();i++){
+    
+    if(v[i]==v[i+1]){
+        c++;
+
+    }
+
+    if(c>ans){
+        ans=c;
+    }
+
+    if(v[i]!=v[i+1]){
+        c=1;
+
+    }
+
+    
+   
+}
+
+if(v[n-2]==v[n-1]){
+    c++;
+
+}
+
+if(c>ans){
+    ans=c;
+}
+
+
+return ans;
+
+
+
+
+
+
+
+
+
