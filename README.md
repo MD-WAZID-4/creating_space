@@ -27,6 +27,55 @@ document.getElementById('submitBtn_3').addEventListener('click', function() {
     statusDiv2.dataset.status = status.toLowerCase();
     timeSlot2.insertAdjacentElement('afterend', statusDiv2);
   });
+
+
+
+
+  int n=s.size();
+string a;
+string b;
+int ans=0;
+
+unordered<map>mp;
+priority_queue<int>pq;
+
+if(x>y){
+
+
+for(int i=0;i<n-1;i++){
+    string v;
+    v.push_back(s[i]);
+    v.push_back(s[i+1]);
+    if(v=="ab"){
+
+        ans+=x;
+    }
+    else{
+        a.push_back(s[i]);
+
+    }
+}
+
+
+
+}
+else{
+
+    for(int i=0;i<n-1;i++){
+    string v;
+    v.push_back(s[i]);
+    v.push_back(s[i+1]);
+    if(v=="ba"){
+
+        ans+=y;
+    }
+    else{
+        a.push_back(s[i]);
+
+    }
+}
+
+}
   
   // Visual feedback
   const copyBtn = document.getElementById('copyBtn');
